@@ -11,6 +11,18 @@ client.on('message', message => {
       }
 });
 
+client.on("guildMemberAdd", function(member) {
+    const wc = member.guild.channels.find("name", "member-log")
+        const embed = new Discord.RichEmbed()
+        .setColor('B90C0C')
+        .setAuthor(member.user.tag, member.user.avatarURL)
+ .setDescription('**:rose: __Welcome To S7Q CLAN__:rose: **')
+.setThumbnail(member.avatarURL)
+        .setTimestamp()
+        return wc.sendEmbed(embed);
+        
+});
+
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
