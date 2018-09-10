@@ -25,8 +25,8 @@ client.on("guildMemberAdd", member => {
 السلام عليكم
 :earth_asia: حياك الله تنورنه في كلان الاسطير سحق:heart:  ,   https://discord.gg/U2D6C9B
 حلمنه نوصل 200 عضو**
-[${member}]د .... الدعوه خاصه لك يا قلبي .
-**`) 
+ [${member}] .... الدعوه خاصه لك يا قلبي .
+**`)
 }).catch(console.error)
 })
 
